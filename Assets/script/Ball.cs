@@ -72,6 +72,9 @@ public class Ball : MonoBehaviour
 		if (PlayerPrefs.GetInt("HighCoin", 0) != null)
 		{
 
+
+
+
 			hiCoinCount = PlayerPrefs.GetInt("HighCoin");
 		}
 

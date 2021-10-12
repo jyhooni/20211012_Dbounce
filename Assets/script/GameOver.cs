@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Advertisements;
+
 
 public class GameOver : MonoBehaviour
 {
@@ -14,6 +16,7 @@ public class GameOver : MonoBehaviour
     void Start()
     {
         heartcount = 0;
+       // Advertisement.Initialize(4402129, true);
     }
 
     // Update is called once per frame
@@ -48,6 +51,9 @@ public class GameOver : MonoBehaviour
             {
                 Debug.Log("heat 3");
                 heart1.SetActive(false);
+
+
+
                 SceneManager.LoadScene("Gameover");
             }
 
